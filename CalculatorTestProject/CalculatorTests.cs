@@ -17,6 +17,18 @@ namespace GitActionCalculator
         }
 
         [Fact]
+        public void Add_ShouldReturnSumOfTwoNumbers1()
+        {
+            // Arrange
+            var calculator = new Calculator();
+
+            // Act
+            int result = calculator.Add(5, 3);
+
+            // Assert
+            Assert.Equal(8, result);
+        }
+        [Fact]
         public void Subtract_ShouldReturnDifferenceOfTwoNumbers()
         {
             // Arrange
